@@ -1,0 +1,93 @@
+#showLeftPush{
+   border-radius:50%;
+   height:80px;
+   width:80px;
+   border:1px solid #0d77b6;
+   font-size:30px;
+   cursor:pointer;
+   margin-left:5px;
+   margin-top:20px;
+   background-color:#0d77b6;
+   color:#fff;
+   padding-top:7px;
+   padding-right:5px; 
+}
+
+.menu {
+    background: #47a3da;
+    position: fixed;
+}
+
+.menu h3 {
+    color: #afdefa;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    background: #0d77b6;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+    text-decoration: initial;
+}
+
+.menu a:hover {
+    background: #258ecd;
+}
+
+.menu a:active {
+    background: #afdefa;
+    color: #47a3da;
+}
+
+.menu-vertical {
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-vertical a {
+    border-bottom: 1px solid #258ecd;
+    padding: 1em;
+}
+
+.menu-left {
+    left: -240px;
+}
+
+.menu-right {
+    right: -240px;
+}
+
+.menu-left.menu-open {
+    left: 0px;
+}
+
+.menu-right.menu-open {
+    right: 0px;
+}
+
+.body {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+ 
+.menu-push-toright {
+    left: 240px;
+}
+ 
+ 
+/* Transitions */
+ 
+.menu,
+.body {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
