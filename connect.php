@@ -1,13 +1,12 @@
-<?php
-	$username = root;
-	$password = root;
+<?php	
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+        
+        $connect = new mysqli('localhost','root', 'root', 'gurbanidb');
 
-	$connect = new PDO('mysql:host=localhost;dbname=gurbanidb', $username, $password);
-	if($connect){ 
-	   echo "mysql Connected<br>"; 
-	} 
-	else { 
-	   echo "mysql isn't connected<br>"; 
-	}
-	$connect->exec("set names utf8");
+        if($connect->connect_errno){
+            echo "connection failed";
+            die($mysqli->connect_error);
+        }
+        $connect->set_charset("utf8");
 ?>
